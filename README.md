@@ -15,8 +15,8 @@ Designed for **Debian**, **Ubuntu**, and **Fedora** systems.
 ✅ Install essential security packages (e.g., Firejail, AppArmor, AIDE, Zeek, Suricata)  
 ✅ Disable unnecessary and vulnerable services  
 ✅ Blacklist unused and risky kernel modules  
-✅ Runs multiple times without conflict  
-✅ Logging of all operations to `/var/log/hardening.log`  
+✅ Runs multiple times without conflict
+✅ Logging of all operations to `/var/log/harden_linux.log`  
 ✅ Dry-run mode and Assume-yes automation  
 ✅ Colored terminal output for better readability  
 ✅ Compatible with **Ubuntu**, **Debian**, and **Fedora**
@@ -39,20 +39,20 @@ Designed for **Debian**, **Ubuntu**, and **Fedora** systems.
 First, make the script executable:
 
 ```bash
-chmod +x harden.sh
+chmod +x harden_linux.sh
 ```
 
 Then, you can run it with different options:
 
 | Command Example | Description |
 |:---|:---|
-| `sudo ./harden.sh --all --assume-yes` | Apply full system hardening automatically |
-| `sudo ./harden.sh --install` | Only install security-related packages |
-| `sudo ./harden.sh --permissions` | Only fix system file permissions |
-| `sudo ./harden.sh --services` | Only disable unnecessary services |
-| `sudo ./harden.sh --dry-run --all` | Simulate all changes without applying them |
-| `./harden.sh --help` | Show help message |
-| `./harden.sh --version` | Display version information |
+| `sudo ./harden_linux.sh --all --assume-yes` | Apply full system hardening automatically |
+| `sudo ./harden_linux.sh --install` | Only install security-related packages |
+| `sudo ./harden_linux.sh --permissions` | Only fix system file permissions |
+| `sudo ./harden_linux.sh --services` | Only disable unnecessary services |
+| `sudo ./harden_linux.sh --dry-run --all` | Simulate all changes without applying them |
+| `./harden_linux.sh --help` | Show help message |
+| `./harden_linux.sh --version` | Display version information |
 
 ---
 
@@ -60,4 +60,4 @@ Then, you can run it with different options:
 
 - **Backups**: The script automatically backs up critical configuration files before modifying them.
 - **Dry-Run**: Always recommended on production servers before applying changes.
-- **Logs**: All actions are logged to `/var/log/hardening.log` for audit and troubleshooting.
+- **Logs**: All actions are logged to `/var/log/harden_linux.log` for audit and troubleshooting.

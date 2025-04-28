@@ -11,7 +11,7 @@ RED="\e[31m"
 YELLOW="\e[33m"
 NC="\e[0m"
 
-LOG_FILE="/var/log/hardening.log"
+LOG_FILE="/var/log/harden_linux.log"
 
 ASSUME_YES=0
 DRY_RUN=0
