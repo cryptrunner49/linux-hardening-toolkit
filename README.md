@@ -15,7 +15,7 @@ Designed for **Debian**, **Ubuntu**, and **Fedora** systems.
 ✅ Install essential security packages (e.g., Firejail, AppArmor, AIDE, Zeek, Suricata)  
 ✅ Disable unnecessary and vulnerable services  
 ✅ Blacklist unused and risky kernel modules  
-✅ Runs multiple times without conflict
+✅ Runs multiple times without conflict 
 ✅ Logging of all operations to `/var/log/harden_linux.log`  
 ✅ Dry-run mode and Assume-yes automation  
 ✅ Colored terminal output for better readability  
